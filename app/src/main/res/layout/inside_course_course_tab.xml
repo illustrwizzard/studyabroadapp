@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.axis.axistrial.InsideCourseCourseTab"
+    android:orientation="vertical"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarlayout$ScrollingViewBehaviour">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:elevation="5dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:padding="5dp"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewwwwwww"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="12dp"
+                        android:elevation="3dp"
+                        app:cardCornerRadius="12dp"
+                       app:cardBackgroundColor="#48DAD8D8" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/totalfee_in_cctab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginBottom="15dp"
+                                android:text=" $ 6000"
+                                android:textColor="#00e600"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="16dp"
+                                android:text="Total fee" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:id="@+id/courseimg_iiddd"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/degreehat"
+                        android:padding="5dp" />
+
+                    <View
+                        android:id="@+id/location_img_cctab"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@+id/course_in_cctab"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/location_img"
+                        android:padding="10dp" />
+
+                    <View
+                        android:id="@+id/yearimg_iddd"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@+id/location_in_cctab"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/hourglass"
+                        android:padding="10dp" />
+
+                    <View
+                        android:id="@+id/time_iddd"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@+id/year_in_cctab"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/time"
+                        android:padding="10dp" />
+
+
+
+                    <TextView
+                        android:maxLines="2"
+                        android:id="@+id/course_in_cctab"
+                        android:layout_width="219dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toStartOf="@+id/cardviewwwwwww"
+                        android:layout_toEndOf="@+id/courseimg_iiddd"
+                        android:text="PG"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:maxLines="2"
+                        android:id="@+id/location_in_cctab"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/course_in_cctab"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_toStartOf="@+id/cardviewwwwwww"
+                        android:layout_toEndOf="@+id/location_img_cctab"
+                        android:text="Birmingham"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/year_in_cctab"
+                        android:layout_width="227dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location_in_cctab"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@+id/cardviewwwwwww"
+                        android:layout_toEndOf="@+id/yearimg_iddd"
+                        android:text="1 Year"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+
+                        android:maxLines="2"
+                        android:id="@+id/time_in_cctab"
+                        android:layout_width="226dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/year_in_cctab"
+                        android:layout_marginStart="15dp"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_toStartOf="@+id/cardviewwwwwww"
+                        android:layout_toEndOf="@+id/time_iddd"
+                        android:text="Full time"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Fee structure"
+                    android:textColor="#4db8ff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:padding="15dp"
+                android:elevation="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="#f0f5f5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="International Fee"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TableRow
+                            android:layout_height="50dp"
+                            android:background="#E7E9EC"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Term"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Fee Head"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:gravity="end"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Amount"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tablerow1"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term1"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 1"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tablerow2"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term2"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 2"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tablerow3"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term3"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 3"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tablerow4"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term4"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 4"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tablerow5"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term5"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 5"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tablerow6"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term6"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 6"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tablerow7"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term7"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 7"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tablerow8"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term8"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 8"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+
+                            android:id="@+id/tablerow9"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term9"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 9"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tablerow10"
+                            android:background="@color/white"
+                            android:padding="7dp">
+
+                            <TextView
+                                android:id="@+id/term10"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Term 10"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tutionfee10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tution Fee"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/amount10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="8250"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+                        </TableRow>
+
+
+
+
+
+
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:padding="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Grand Total"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#00e600"
+                            android:textSize="15dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/totalfeeeeeeeee"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="8250"
+                            android:textStyle="bold"
+                            android:textColor="#00e600"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/fact" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Entrance Required"
+                    android:textColor="#4db8ff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cc1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/ctext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:text="IELTS"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cc2"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/ctext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:text="IELTS"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cc3"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/ctext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:text="IELTS"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:elevation="5dp"
+                android:id="@+id/cc4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/ctext4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:text="IELTS"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cc5"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/ctext5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:text="IELTS"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cc6"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/ctext6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:text="IELTS"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/check1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Course Eligibility"
+                    android:textColor="#4db8ff"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ccc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/e1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:padding="15dp"
+                        android:text="IELTS:"/>
+
+                    <TextView
+                        android:id="@+id/s1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="6.5"
+                        android:textColor="#43A047"
+                        android:textSize="15dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ccc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:background="#f0f5f5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/e2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:padding="15dp"
+                        android:text="HSE or SSE:"/>
+                    <TextView
+                        android:id="@+id/s2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f0f5f5"
+                        android:textSize="15dp"
+                        android:textColor="#00e600"
+                        android:textStyle="bold"
+
+                        android:text="60"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ccc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:background="#f0f5f5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/e3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:padding="15dp"
+                        android:text="IELTS:"/>
+
+                    <TextView
+                        android:id="@+id/s3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f0f5f5"
+                        android:text="6.5"
+                        android:textColor="#43A047"
+                        android:textSize="15dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:id="@+id/ccc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:background="#f0f5f5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/e4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:padding="15dp"
+                        android:text="IELTS:"/>
+
+                    <TextView
+                        android:id="@+id/s4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f0f5f5"
+                        android:text="6.5"
+                        android:textColor="#43A047"
+                        android:textSize="15dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:id="@+id/ccc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:background="#f0f5f5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/e5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:padding="15dp"
+                        android:text="IELTS:"/>
+
+                    <TextView
+                        android:id="@+id/s5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f0f5f5"
+                        android:text="6.5"
+                        android:textColor="#43A047"
+                        android:textSize="15dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:id="@+id/ccc6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:background="#f0f5f5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/e6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:padding="15dp"
+                        android:text="IELTS:"/>
+
+                    <TextView
+                        android:id="@+id/s6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f0f5f5"
+                        android:text="6.5"
+                        android:textColor="#43A047"
+                        android:textSize="15dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleimage_in_course"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/drivefile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Course Syllabus"
+                    android:textColor="#4db8ff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                app:cardCornerRadius="12dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/syllabus_in_cctab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textColor="@color/black"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/drivefile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Required Documents"
+                    android:textColor="#4db8ff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardCornerRadius="12dp"
+                >
+                <TextView
+                    android:id="@+id/documents_in_cctab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f5f5"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

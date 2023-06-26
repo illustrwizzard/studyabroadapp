@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.axis.axistrial.ApplicationInAboutFragment"
+    android:padding="8dp">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarlayout$ScrollingViewBehaviour">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="5dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleimage_in_course"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="75dp"
+                    android:padding="3dp"
+                    android:layout_marginTop="12dp"
+                    android:text="The University of Law"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="320dp"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:layout_height="1dp"
+                android:background="#e0ebeb"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="4dp"
+                >
+
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/location_new" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/coursename_img"
+                    android:padding="3dp" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/calender_new"
+                    android:padding="3dp" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/hourglass_new"
+                    android:padding="3dp" />
+
+
+                <TextView
+                    android:id="@+id/collegename_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+
+                    android:padding="2dp"
+                    android:text="London"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/location_in_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="Accelerated Bsc Accounting and Finance"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/time_in_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="9th Dec 2021"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="100dp"
+
+                    android:padding="2dp"
+                    android:text="Application Recieved at company"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/getadmissionbutton"
+                    android:text="Application"
+                    android:textColor="@color/white" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/getadmissionbutton"
+                    android:text="Attachments"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>

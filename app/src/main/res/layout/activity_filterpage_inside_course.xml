@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.axis.axistrial.Filterpage_inside_course"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/appbar_idww"
+            android:paddingRight="20dp"
+            >
+            <androidx.appcompat.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize">
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Filter"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    />
+                <Space
+
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_above="@id/belowbarid"
+            android:id="@+id/middlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar_idww"
+            android:background="@drawable/bottomsheetdesign"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="#F3F3F3"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/fee_id_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F3F3F3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="fee"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/course_type_id_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F3F3F3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+
+                        android:text="Course type"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/Uuniversity_id_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F3F3F3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+
+
+                        android:text="University"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/filter_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingLeft="5dp"
+                            android:drawableLeft="@drawable/searchicon"
+                            android:textSize="15dp"
+                            android:background="@drawable/searchviewdesign"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layouttC1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"/>
+                        <RelativeLayout
+                            android:id="@+id/relativeLayoutforPRICE"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_height="0dp"
+                            android:padding="10dp"
+                            android:layout_weight="1.5">
+
+                            <TextView
+                                android:id="@+id/PRICEtextViewProgressID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/relativeLayoutforPRICE"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Start"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="15dp"
+                                tools:ignore="NotSibling" />
+
+                            <EditText
+                                android:id="@+id/start"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/relativeLayoutforPRICE"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@id/PRICEtextViewProgressID"
+                                android:background="@drawable/searchviewdesign"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:text="100"
+                                android:textSize="15dp"
+                                tools:ignore="NotSibling" />
+
+                            <TextView
+                                android:id="@+id/end_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/PRICEtextViewProgressID"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="10dp"
+                                android:text="End"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="15dp" />
+
+                            <EditText
+                                android:id="@+id/end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/PRICEtextViewProgressID"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:layout_toRightOf="@id/end_price"
+                                android:background="@drawable/searchviewdesign"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:text="100000"
+                                android:textSize="15dp" />
+
+                            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                                android:id="@+id/PRICEseekBarID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/end_price"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="30dp"
+                                app:max_value="100000"
+                                app:bar_color="#3BA1CF"
+                                app:left_thumb_color="#3BA1CF"
+                                app:right_thumb_color="#3BA1CF"
+                                app:left_thumb_color_pressed="#A8AAAA"
+                                app:right_thumb_color_pressed="#A8AAAA"
+                                app:bar_highlight_color="#A8AAAA"
+                                app:min_value="0" />
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layouttC2"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ListView
+                            android:padding="10dp"
+                            android:choiceMode="multipleChoice"
+                            android:id="@+id/listm_id1"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layouttC3"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ListView
+                            android:layout_marginBottom="50dp"
+                            android:textAlignment="center"
+                            android:choiceMode="multipleChoice"
+                            android:padding="20dp"
+                            android:id="@+id/listm_id2"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/belowbarid"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/close_courseFilter"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:text="Close"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/applyfilterbuttonincourse"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+
+                android:gravity="center"
+                android:elevation="2dp"
+                android:text="Apply"
+                android:textColor="#03A9F4"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBarinCourse"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+

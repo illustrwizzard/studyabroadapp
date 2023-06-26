@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1099315567940",
+    "firebase_url": "https://testotp-25d93-default-rtdb.firebaseio.com",
+    "project_id": "testotp-25d93",
+    "storage_bucket": "testotp-25d93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099315567940:android:0e3733f2e9b4882c648b11",
+        "android_client_info": {
+          "package_name": "com.axis.axistrial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1099315567940-jiep0n5djjmh5661312pu0c77hnghj3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.axis.axistrial",
+            "certificate_hash": "516bc70354099e72274726444cc4170737ffa9fb"
+          }
+        },
+        {
+          "client_id": "1099315567940-ljdcenibs4svr1qet23pvnp6bogv9kkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.axis.axistrial",
+            "certificate_hash": "63b9fc9b296ebbc0a5a91a06c1a777a83602403f"
+          }
+        },
+        {
+          "client_id": "1099315567940-tudbth9enae60gg5brtbjur06u42msft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_X5SNiZx4ESAp4TBF2Dkugn94aLtaEPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1099315567940-msv4u2cuht1hpg5nih2ko4mpfjku62fn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:background="#E4E1E1"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:padding="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F7F8"
+                        android:gravity="center"
+                        android:text=" University Hostel "
+                        android:textColor="#1976D2"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/university_hostalname_in_universityaccomodation_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="Cutty Sark Hall"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <GridLayout
+                        android:padding="2dp"
+
+                        android:background="@drawable/borderdesign"
+                        android:id="@+id/gridlayout_in_acc_university"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3">
+
+                        <TextView
+                            android:background="#D0D1D1"
+                            android:padding="10dp"
+                            android:id="@+id/gridlay1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Room Type"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:background="#D0D1D1"
+                            android:padding="10dp"
+                            android:id="@+id/gridlay2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Duration"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:background="#D0D1D1"
+                            android:padding="10dp"
+                            android:id="@+id/gridlay3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="Fee"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:padding="10dp"
+                            android:id="@+id/gridlay4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="hello" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+
+                            android:padding="10dp"
+                            android:id="@+id/gridlay5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="hello" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:padding="10dp"
+                            android:id="@+id/gridlay6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:text="hello" />
+
+
+
+
+                    </GridLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Go to web"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:visibility="gone"
+                        style="@style/AccomodationButton"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:text="View page"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

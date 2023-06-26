@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.axis.axistrial.EducationDetailsInAbout"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/appbar_id"
+        >
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/toolbar"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize">
+            <ImageView
+                android:id="@+id/arrowback_in_educationDetails"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_back"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="0dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education \nDetails"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/appbar_id"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/LinearlayoutinEdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Secondary Education"
+                        android:textColor="#4db8ff"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Board"
+                        android:layout_marginTop="20dp"/>
+
+                    <Spinner
+
+                        android:text="Choose Board"
+                        android:tag="board"
+                        android:paddingLeft="10dp"
+                        android:gravity="center|start"
+                        android:paddingRight="10dp"
+                        android:id="@+id/selectBoard"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_design"
+                        android:elevation="3dp"
+                        app:drawableRightCompat="@drawable/downarrow" />
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:paddingLeft="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Start Year"
+                            android:gravity="start"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:paddingLeft="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="End year"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+
+                        <Spinner
+                            android:tag="startyearsecEdu"
+                            android:id="@+id/startingDateSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp"
+                            android:hint="Start Date Year"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            app:drawableRightCompat="@drawable/downarrow" />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            />
+
+                        <Spinner
+                            android:tag="endyearSecEdu"
+                            android:id="@+id/endingDateSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp"
+                            android:paddingEnd="10dp"
+                            android:hint="End Date Year"
+                            android:gravity="center"
+                            app:drawableRightCompat="@drawable/downarrow" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/enterGrade_id"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:hint="Enter Grade (%)"
+                            />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Visible only to the User"
+                            android:textColor="#8D8F91"
+                            android:layout_weight="1"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#B4B7BA" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Higher Secondary Education"
+                        android:textColor="#4db8ff"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Board"
+                        android:layout_marginTop="20dp"/>
+
+                    <Spinner
+                        android:tag="BoardInHignSec"
+
+                        android:hint="Choose Board"
+                        android:gravity="center|start"
+                        android:paddingLeft="10dp"
+
+                        android:id="@+id/HighersecBoardSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_design"
+                        android:elevation="3dp"
+                        android:paddingRight="10dp"
+                        app:drawableRightCompat="@drawable/downarrow" />
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:paddingLeft="15dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Start Year"
+                            android:gravity="start"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:paddingLeft="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="End year"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <Spinner
+                            android:tag="startyearHSecEdu"
+                            android:id="@+id/HighsecstartingDateSpinner"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp"
+                            android:hint="Start Date Year"
+                            android:gravity="center|start"
+                            app:drawableRightCompat="@drawable/downarrow" />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            />
+                        <Spinner
+                            android:tag="EndyearHSC"
+                            android:id="@+id/HighsecEndDateSpinner"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp"
+                            android:hint="End Date Year"
+                            android:gravity="center"
+                            app:drawableRightCompat="@drawable/downarrow" />
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/HighSecEnterGrade_id1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:hint="Enter Grade (%)"
+                            android:inputType="number"/>
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Visible only to the User"
+                            android:textColor="#7C7E80"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/repeatEdu"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:text="Higher Education"
+                            android:textColor="#4db8ff"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choose Course"
+                            android:layout_marginTop="20dp"/>
+
+                        <Spinner
+                            android:id="@+id/chose_coursetype_in_higereducation"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp"
+                            android:gravity="center|start"
+                            android:hint="Choose Course Type"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:tag="CoursetypeHighEdu"
+                            app:drawableRightCompat="@drawable/downarrow" />
+
+                        <EditText
+
+                            android:tag="InstitituteHighEdu"
+                            android:hint="Choose Institute"
+                            android:gravity="center|start"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:id="@+id/chose_institue_in_higereducation"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp" />
+
+                        <EditText
+
+                            android:tag="CourseHighEdu"
+                            android:hint="Choose Courses"
+                            android:gravity="center|start"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:id="@+id/chose_course_in_higereducation"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/spinner_design"
+                            android:elevation="3dp" />
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:paddingLeft="15dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Start Year"
+                                android:gravity="start"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+                            <TextView
+                                android:paddingLeft="15dp"
+                                android:layout_gravity="center"
+                                android:gravity="start"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="End year"
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center">
+
+                            <Spinner
+
+                                android:tag="StartyearHE"
+                                android:hint="Start Date Year"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                app:drawableRightCompat="@drawable/downarrow"
+                                android:id="@+id/HighEdustartingDateSpinner"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="50dp"
+                                android:background="@drawable/spinner_design"
+                                android:elevation="3dp" />
+
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="0dp"
+                                />
+
+
+                            <Spinner
+
+                                android:tag="EndyearHE"
+                                android:layout_weight="1"
+                                android:hint="Start Date Year"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                app:drawableRightCompat="@drawable/downarrow"
+                                android:layout_width="0dp"
+                                android:id="@+id/HigheduendingDateSpinner"
+                                android:layout_height="50dp"
+                                android:background="@drawable/spinner_design"
+                                android:elevation="3dp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/HighSecEnterGrade_id"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/spinner_design"
+                                android:elevation="3dp"
+                                android:gravity="center"
+                                android:hint="Enter Grade (%)"
+                                android:inputType="number"/>
+
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="0dp"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Visible only to the User"
+                                android:textColor="#7C7E80"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#B4B7BA" />
+
+
+
+
+                <Button
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/spinner_design"
+                    android:textColor="#2196F3"
+
+                    android:onClick="add_higher_edu"
+
+                    android:text="+ Add higher education details"
+
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/submit_in_educationdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/about_button"
+                    android:text="Submit"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

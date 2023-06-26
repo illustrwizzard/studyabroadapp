@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:clickable="false"
+
+        android:id="@+id/hidelinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/bottom_card_radius">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Country"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+                android:id="@+id/indiaflag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:onClick="checkid"
+                android:src="@drawable/flag_canada"
+                android:tooltipText="india"
+                android:tag="IndiaTag"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+                android:id="@+id/spainid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:onClick="checkid"
+                android:src="@drawable/flag_sweden"
+                android:tag="spainTag"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:onClick="checkid"
+                android:src="@drawable/flag_latvia"
+                android:tag="germanyTag"
+                android:id="@+id/germanyid" />
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:tag="taiwanTag"
+
+                android:onClick="checkid"
+                android:src="@drawable/flag_czech_republic"
+                android:id="@+id/taiwanid"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:onClick="checkid"
+                android:tag="egyptTag"
+                android:src="@drawable/flag_poland"
+                android:id="@+id/egyptid"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="1dp">
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canada"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sweden"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latvia"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="czech_republic"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poland"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:tag="australiaTag"
+
+                android:onClick="checkid"
+                android:src="@drawable/flag_lithuania"
+                android:id="@+id/australiid"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+                android:visibility="invisible"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:tag="eqyptTag"
+
+                android:onClick="checkid"
+                android:id="@+id/egyptid1"
+                android:src="@drawable/flag_egypt" />
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:visibility="invisible"
+                android:clickable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:onClick="checkid"
+                android:src="@drawable/flag_greece"
+                android:id="@+id/greeceid"
+                android:tag="greeceTag"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:visibility="invisible"
+                android:clickable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:onClick="checkid"
+                android:src="@drawable/flag_south_korea"
+                android:id="@+id/southkoreaid"
+                android:tag="southkoreaTag"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:visibility="invisible"
+                android:clickable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:tag="philippianTag"
+
+                android:onClick="checkid"
+                android:src="@drawable/flag_philippines"
+                android:id="@+id/philipianid"/>
+
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="1dp">
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lithuania"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egypt"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Greece"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="South\nKorea"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Philippians"
+                />
+            <Space
+                android:clickable="false"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

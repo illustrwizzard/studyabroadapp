@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:id="@+id/feedtabbbbbb"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.axis.axistrial.InsideUniversityFeedTab">
+    <FrameLayout
+        android:id="@+id/inside_feed_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarlayout$ScrollingViewBehaviour">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:padding="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="News"
+                   android:textColor="#FFC107"
+                   android:textSize="16dp"
+                   />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recycler_for_feedtab_in_university"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+           </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

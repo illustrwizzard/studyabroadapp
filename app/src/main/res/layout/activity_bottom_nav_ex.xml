@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.axis.axistrial.BottomNavEx"
+
+    android:id="@+id/bottamnavigation_swap_id">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/appbar_id"
+        >
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="3dp"
+                android:src="@drawable/axislogologo"
+                android:id="@+id/circle_imageViewinappbar"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/appbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Axis"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textColor="#2196F3"
+                android:layout_marginStart="20dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/fragment_displayhere_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomnavigation_id"
+        android:layout_below="@+id/appbar_id">
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottomlayoutborderdesign"
+        app:itemIconSize="30dp"
+        app:itemIconTint="#0AA8F1"
+        app:menu="@menu/item_menu" />
+
+</RelativeLayout>

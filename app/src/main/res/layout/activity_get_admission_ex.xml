@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.axis.axistrial.GetAdmissionEx">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A Level Further Mathematics"
+            android:id="@+id/txt1id"
+            android:textSize="18dp"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/txtid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+
+
+            android:text="choose intake month"
+
+            android:textSize="16dp"
+            />
+
+        <Spinner
+
+            android:background="@drawable/spinner_design"
+            android:id="@+id/month_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="25dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/txt2id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="choose intake year"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+
+            android:textSize="16dp"
+            />
+
+        <Spinner
+            android:background="@drawable/spinner_design"
+            android:id="@+id/year_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="25dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <TextView
+            android:id="@+id/txt3id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="mail id"
+            android:textAllCaps="true"
+
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/intake_mail"
+            android:background="@drawable/spinner_design"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:hint="email"
+            android:inputType="text"
+            android:layout_marginBottom="60dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/getadmission_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:text="Submit"
+            android:onClick="submitbuttoningetadmission"
+            android:textColor="@color/white"
+            android:background="@drawable/getadmissionbutton"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

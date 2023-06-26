@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.axis.axistrial.Filterpageinsideunv"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/appbar_idww"
+            android:paddingRight="20dp"
+            >
+            <androidx.appcompat.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize">
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Filter"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    />
+                <Space
+
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_above="@id/belowbarid"
+            android:id="@+id/middlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar_idww"
+            android:background="@drawable/bottomsheetdesign"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/rating_id_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#F3F3F3"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Rating"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/location_id_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#F3F3F3"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+
+                            android:text="Location"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/country_id_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#F3F3F3"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+
+
+                            android:text="Country"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/filter_search"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:drawableLeft="@drawable/searchicon"
+                                android:textSize="15dp"
+                                android:background="@drawable/searchviewdesign"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ListView
+                                android:padding="10dp"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:choiceMode="multipleChoice"
+                                android:scrollbarSize="1dp"
+                                android:id="@+id/listm_id"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ListView
+                                android:padding="10dp"
+                                android:choiceMode="multipleChoice"
+                                android:id="@+id/listm_id1"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ListView
+                                android:layout_marginBottom="50dp"
+                                android:textAlignment="center"
+                                android:choiceMode="multipleChoice"
+                                android:padding="20dp"
+                                android:id="@+id/listm_id2"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/belowbarid"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/close_filter_id"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:text="Close"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/applyfilterbutton"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+
+                android:gravity="center"
+                android:elevation="2dp"
+                android:text="Apply"
+                android:textColor="#03A9F4"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+
+        android:id="@+id/progressBarforfilter"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

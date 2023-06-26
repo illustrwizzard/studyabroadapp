@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:id="@+id/maincourselayout1">
+    <LinearLayout
+        android:id="@+id/blurlayout"
+        android:layout_below="@id/appbar_id1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="15dp"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleimage11_in_course1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/course1" />
+
+                    <TextView
+
+                        android:id="@+id/courseheading_id1"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/share_imag1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="3dp"
+                        android:text="A Level Further \n Mathematics"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/share_imag1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/share_img"
+
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/bookmarksave_id1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bookmark"
+
+                        />
+
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"
+                    android:background="#e0ebeb"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/insiderelative_id1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+
+                    <View
+                        android:id="@+id/collegemnameicon_id1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/university_name_img"
+                        android:padding="3dp" />
+
+                    <View
+                        android:id="@+id/location_img_id1"
+
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_below="@id/collegename_id1"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/location_new"
+                        android:padding="3dp" />
+
+                    <View
+                        android:id="@+id/calender_img_id1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_below="@+id/location_in_course1"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/calender_new"
+                        android:padding="3dp" />
+
+                    <View
+                        android:id="@+id/course_img_id1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_below="@+id/time_in_course1"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/coursename_img"
+                        android:padding="3dp" />
+
+                    <TextView
+
+                        android:id="@+id/collegename_id1"
+                        android:layout_width="171dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_toStartOf="@+id/totalfee_in_course1"
+                        android:layout_toEndOf="@+id/collegemnameicon_id1"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+
+                        android:padding="2dp"
+                        android:text="Bellerb College -(study \nGroup)"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/location_in_course1"
+                        android:layout_width="151dp"
+                        android:layout_height="21dp"
+                        android:layout_below="@id/collegename_id1"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="31dp"
+                        android:layout_toStartOf="@+id/totalfee_in_course1"
+                        android:layout_toEndOf="@+id/location_img_id1"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:text="London"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/time_in_course1"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/location_in_course1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_toStartOf="@+id/totalfee_in_course1"
+                        android:layout_toEndOf="@+id/calender_img_id1"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:text="Full Time"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/course_in_course1"
+                        android:layout_width="161dp"
+                        android:layout_height="23dp"
+                        android:layout_below="@+id/time_in_course1"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_toStartOf="@+id/totalfee_in_course1"
+                        android:layout_toEndOf="@+id/course_img_id1"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:text="UG/6 Terms"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/totalfee_in_course1"
+                        android:layout_width="97dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="11dp"
+                        android:background="@drawable/borderdesign"
+                        android:padding="5dp"
+                        android:text="  Total fee\n  $49,500" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:clickable="false"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/getadmissionbutton"
+
+                    android:text="View"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

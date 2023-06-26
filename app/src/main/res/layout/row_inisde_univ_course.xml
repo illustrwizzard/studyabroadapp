@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativecourse"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilerv"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/university_name_img"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewUnivCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="51dp"
+                android:layout_toEndOf="@+id/profilerv"
+                android:text="Accounting and Finance, BA Hons(BA)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/textViewUnivCourse"
+                android:id="@+id/cost_in_university_coursetab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+
+
+
+                android:text="$ 58,000"
+                android:textColor=" #00FF00"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

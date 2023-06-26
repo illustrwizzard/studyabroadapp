@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Axis Overseas Careers</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_nav_ex2">BottomNavEx2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="anandha_krishnan">Anandha Krishnan</string>
+    <string name="hyperlink">Go to web<a href="https://learntodroid.com" /></string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <string-array name="Choose_course_typr">
+        <item>january</item>
+        <item>February</item>
+        <item>march</item>
+        <item>april</item>
+        <item>may</item>
+        <item>june</item>
+        <item>july</item>
+        <item>august</item>
+        <item>september</item>
+        <item>october</item>
+        <item>november</item>
+        <item>december</item>
+    </string-array>
+
+
+    <string-array name="Start_month">
+        <item>january</item>
+        <item>February</item>
+        <item>march</item>
+        <item>april</item>
+        <item>may</item>
+        <item>june</item>
+        <item>july</item>
+        <item>august</item>
+        <item>september</item>
+        <item>october</item>
+        <item>november</item>
+        <item>december</item>
+    </string-array>
+
+
+    <string-array name="Choose_board">
+        <item>january</item>
+        <item>February</item>
+        <item>march</item>
+        <item>april</item>
+        <item>may</item>
+        <item>june</item>
+        <item>july</item>
+        <item>august</item>
+        <item>september</item>
+        <item>october</item>
+        <item>november</item>
+        <item>december</item>
+    </string-array>
+
+
+    <string-array name="month">
+        <item>january</item>
+        <item>February</item>
+        <item>march</item>
+        <item>april</item>
+        <item>may</item>
+        <item>june</item>
+        <item>july</item>
+        <item>august</item>
+        <item>september</item>
+        <item>october</item>
+        <item>november</item>
+        <item>december</item>
+    </string-array>
+
+
+    <string-array name="Start_year">
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2010</item>
+        <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+    </string-array>
+
+
+    <string-array name="Choose_course_type">
+
+
+        <item>UG</item>
+        <item>PG</item>
+        <item>PHD</item>
+        <item>Pre Master</item>
+        <item>Foundation</item>
+        <item>Diploma</item>
+
+
+    </string-array>
+
+    <string-array name="ChooseBoard">
+
+
+        <item>CBSE</item>
+        <item>ICSE</item>
+        <item>State Board</item>
+
+
+    </string-array>
+
+
+</resources>

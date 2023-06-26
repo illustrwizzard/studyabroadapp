@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.axistrial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AxisTrial"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.axis.axistrial.ErrorFilterPage"
+            android:exported="false" />
+        <activity
+            android:name="com.axis.axistrial.GetAdmissionEx"
+            android:exported="true" />
+        <activity
+            android:name="com.axis.axistrial.LoadingActivityFilterUniversity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.LoadingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.FromUniversityFilter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.FromFilterTo"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.Filterpage_inside_course"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.Filterpageinsideunv"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.FeedDisplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.ChangePasswordInAccountPage0"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.ChangePasswordInAccountPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.UploadFilesInGetAdmission"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.ApplicationDetailsInApplicationDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.InsideUniversity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.InsideCourseSection"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.FirstPageInsideUniversity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.FirstPageInsideCoursee"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.BottomNavEx"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.RegisterPage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.SendOtp"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.LoginPage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.EducationDetailsInAbout"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.WorkDetailsInAbout"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.axis.axistrial.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

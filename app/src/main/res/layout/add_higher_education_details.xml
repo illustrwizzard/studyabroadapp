@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Higher Education"
+        android:textColor="#4db8ff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Course"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/chose_coursetype_in_higereducation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_design"
+        android:elevation="3dp"
+        android:gravity="center|start"
+        android:hint="Choose Course Type"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:tag="CoursetypeHighEdu"
+    />
+
+    <TextView
+
+        android:tag="InstitituteHighEdu"
+        android:hint="Choose Institute"
+        android:gravity="center|start"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/chose_institue_in_higereducation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_design"
+        android:elevation="3dp" />
+
+    <TextView
+
+        android:tag="CourseHighEdu"
+        android:hint="Choose Courses"
+        android:gravity="center|start"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/chose_course_in_higereducation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_design"
+        android:elevation="3dp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Start Year"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="End year"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+
+            android:tag="StartyearHE"
+            android:hint="Start Date Year"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/HighEdustartingDateSpinner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_design"
+            android:elevation="3dp" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            />
+
+
+        <TextView
+
+            android:tag="EndyearHE"
+            android:layout_weight="1"
+            android:hint="Start Date Year"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="0dp"
+            android:id="@+id/HigheduendingDateSpinner"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_design"
+            android:elevation="3dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/HighSecEnterGrade_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner_design"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="Enter Grade (%)" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Visible only to the User"
+            android:textColor="#7C7E80"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
